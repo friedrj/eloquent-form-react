@@ -1,9 +1,22 @@
-import { Button } from "../lib";
+import { Form } from "../lib";
+import { FormSchema } from "../lib/types";
 
 function App() {
+  const schema = {
+    inputs: [
+      { name: "name", label: "Name", type: "text" },
+      { name: "email", label: "Email", type: "email" },
+      { name: "password", label: "Password", type: "password" },
+    ],
+  } as FormSchema;
+
+  function onSubmit(data: Record<string, string>) {
+    console.log(data);
+  }
+
   return (
     <>
-      <Button></Button>
+      <Form schema={schema} onSubmit={onSubmit}></Form>
     </>
   );
 }

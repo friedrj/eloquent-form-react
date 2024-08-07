@@ -1,0 +1,29 @@
+body {
+  background: #333;
+  color: #fff;
+}
+button {
+  background: #333;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form {
+  margin: 20px 0;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 1px solid #fff;
+  background: #333;
+  color: #fff;
+}
